@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 90.626 sec <<< FAILURE! - in TestSuite
+loginTest(com.inetBankingProject.TC_loginTest_001)  Time elapsed: 23.783 sec  <<< FAILURE!
+java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+	at com.inetBankingProject.TC_loginTest_001.loginTest(TC_loginTest_001.java:45)
+
+addNewCustomer(com.inetBankingProject.TC_AddCustomerTest_003)  Time elapsed: 6.177 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.66)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LAPTOP-LT3NP74S', ip: '192.168.43.57', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\KALAIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 62175f4693c1bd93decd43dce49fa597
+*** Element info: {Using=xpath, value=//a[contains(text(),'New Customer')]}
+	at com.inetBankingProject.TC_AddCustomerTest_003.addNewCustomer(TC_AddCustomerTest_003.java:29)
+

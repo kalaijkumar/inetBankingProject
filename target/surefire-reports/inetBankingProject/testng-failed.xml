@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [inetBankingProject]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.inetBankingUtilities.Reporting"/>
+  </listeners>
+  <test name="BankingApp Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.inetBankingProject.TC_loginTest_001"/>
+      <class name="com.inetBankingProject.TC_AddCustomerTest_003"/>
+    </classes>
+  </test> <!-- BankingApp Test -->
+  <test name="BankingApp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.inetBankingProject.TC_loginTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="setproperty"/>
+        </methods>
+      </class> <!-- com.inetBankingProject.TC_loginTest_001 -->
+      <class name="com.inetBankingProject.TC_AddCustomerTest_003">
+        <methods>
+          <include name="tearDown"/>
+          <include name="addNewCustomer"/>
+          <include name="setproperty"/>
+        </methods>
+      </class> <!-- com.inetBankingProject.TC_AddCustomerTest_003 -->
+    </classes>
+  </test> <!-- BankingApp Test(failed) -->
+</suite> <!-- Failed suite [inetBankingProject] -->

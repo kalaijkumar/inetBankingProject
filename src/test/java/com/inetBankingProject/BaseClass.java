@@ -47,14 +47,14 @@ public class BaseClass {
 	   if (br.equals("chrome"))
 	   {   
 	   
-	   WebDriverManager.chromedriver().setup();
+	   //WebDriverManager.chromedriver().setup();
 	   readconfig.getchromepath();
 	   driver = new ChromeDriver();
 	   }
 	   else if (br.equals("firefox"))
 		   
 	   {
-		   WebDriverManager.firefoxdriver().setup();
+		  // WebDriverManager.firefoxdriver().setup();
 		   readconfig.getfirefoxpath();
 		   driver = new FirefoxDriver();
 		  
