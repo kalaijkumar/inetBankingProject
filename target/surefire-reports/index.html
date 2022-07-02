@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-inetBankingProject" class="navigator-link">
-              <span class="suite-name border-failed">inetBankingProject</span>
+              <span class="suite-name border-skipped">inetBankingProject</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-inetBankingProject" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-inetBankingProject" class="hide-methods failed suite-inetBankingProject"> (hide)</a> <!-- hide-methods failed suite-inetBankingProject -->
-                      <a href="#" panel-name="suite-inetBankingProject" class="show-methods failed suite-inetBankingProject"> (show)</a> <!-- show-methods failed suite-inetBankingProject -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-inetBankingProject" class="hide-methods skipped suite-inetBankingProject"> (hide)</a> <!-- hide-methods skipped suite-inetBankingProject -->
+                      <a href="#" panel-name="suite-inetBankingProject" class="show-methods skipped suite-inetBankingProject"> (show)</a> <!-- show-methods skipped suite-inetBankingProject -->
                     </span>
-                    <div class="method-list-content failed suite-inetBankingProject">
+                    <div class="method-list-content skipped suite-inetBankingProject">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-inetBankingProject" title="com.inetBankingProject.TC_AddCustomerTest_003" class="method navigator-link" hash-for-method="addNewCustomer">addNewCustomer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-inetBankingProject" title="com.inetBankingProject.TC_loginTest_001" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-inetBankingProject -->
+                    </div> <!-- method-list-content skipped suite-inetBankingProject -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,34 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-inetBankingProject" class="panel inetBankingProject">
-          <div class="suite-inetBankingProject-class-failed">
+          <div class="suite-inetBankingProject-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.inetBankingProject.TC_loginTest_001</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">java.io.IOException: The filename, directory name, or volume label syntax is incorrect
-	at java.base/java.io.WinNTFileSystem.canonicalize0(Native Method)
-	at java.base/java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:462)
-	at java.base/java.io.File.getCanonicalPath(File.java:626)
-	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:641)
-	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:606)
-	at com.inetBankingProject.BaseClass.captureScreen(BaseClass.java:84)
-	at com.inetBankingProject.TC_loginTest_001.loginTest(TC_loginTest_001.java:45)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-inetBankingProject-class-failed -->
-          <div class="suite-inetBankingProject-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.inetBankingProject.TC_AddCustomerTest_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -158,35 +133,25 @@
                   <a name="addNewCustomer">
                   </a> <!-- addNewCustomer -->
                   <span class="method-name">addNewCustomer</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.66)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;LAPTOP-LT3NP74S&apos;, ip: &apos;192.168.43.57&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\KALAIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 62175f4693c1bd93decd43dce49fa597
-*** Element info: {Using=xpath, value=//a[contains(text(),&apos;New Customer&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-	at com.inetBankingProjectPageObjects.AddCustomerPage.clickNewcustomer(AddCustomerPage.java:64)
-	at com.inetBankingProject.TC_AddCustomerTest_003.addNewCustomer(TC_AddCustomerTest_003.java:29)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-inetBankingProject-class-failed -->
+          </div> <!-- suite-inetBankingProject-class-skipped -->
+          <div class="suite-inetBankingProject-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.inetBankingProject.TC_loginTest_001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-inetBankingProject-class-skipped -->
         </div> <!-- panel inetBankingProject -->
         <div panel-name="test-xml-inetBankingProject" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -207,6 +172,22 @@ Session ID: 62175f4693c1bd93decd43dce49fa597
       &lt;class name=&quot;com.inetBankingProject.TC_AddCustomerTest_003&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BankingApp Test --&gt;
+  &lt;test name=&quot;BankingApp Test(failed)&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.inetBankingProject.TC_AddCustomerTest_003&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addNewCustomer&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.inetBankingProject.TC_AddCustomerTest_003 --&gt;
+      &lt;class name=&quot;com.inetBankingProject.TC_loginTest_001&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginTest&quot;/&gt;
+          &lt;include name=&quot;setproperty&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.inetBankingProject.TC_loginTest_001 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BankingApp Test(failed) --&gt;
 &lt;/suite&gt; &lt;!-- inetBankingProject --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,6 +200,9 @@ Session ID: 62175f4693c1bd93decd43dce49fa597
             <ul>
               <li>
                 <span class="test-name">BankingApp Test (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">BankingApp Test(failed) (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -246,18 +230,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.inetBankingProject.TC_loginTest_001')
-data.setCell(0, 3, 23776);
+data.setCell(0, 1, 'addNewCustomer')
+data.setCell(0, 2, 'com.inetBankingProject.TC_AddCustomerTest_003')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addNewCustomer')
-data.setCell(1, 2, 'com.inetBankingProject.TC_AddCustomerTest_003')
-data.setCell(1, 3, 6177);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.inetBankingProject.TC_loginTest_001')
+data.setCell(1, 3, 0);
 window.suiteTableData['inetBankingProject']= { tableData: data, tableDiv: 'times-div-inetBankingProject'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-inetBankingProject">
               </div> <!-- times-div-inetBankingProject -->
             </div> <!-- times-div -->
@@ -285,36 +269,22 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.inetBankingProject.TC_loginTest_001</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setproperty(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginTest</span>
-                <span class="method-start">30453 ms</span>
+                <span class="method-start">110 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">54243 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.inetBankingProject.TC_AddCustomerTest_003</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setproperty(chrome)</span>
-                <span class="method-start">54446 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">addNewCustomer</span>
-                <span class="method-start">83026 ms</span>
+                <span class="method-start">118 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">89204 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

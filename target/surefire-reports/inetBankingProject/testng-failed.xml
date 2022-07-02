@@ -15,20 +15,17 @@
   <test name="BankingApp Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.inetBankingProject.TC_AddCustomerTest_003">
+        <methods>
+          <include name="addNewCustomer"/>
+        </methods>
+      </class> <!-- com.inetBankingProject.TC_AddCustomerTest_003 -->
       <class name="com.inetBankingProject.TC_loginTest_001">
         <methods>
-          <include name="tearDown"/>
           <include name="loginTest"/>
           <include name="setproperty"/>
         </methods>
       </class> <!-- com.inetBankingProject.TC_loginTest_001 -->
-      <class name="com.inetBankingProject.TC_AddCustomerTest_003">
-        <methods>
-          <include name="tearDown"/>
-          <include name="addNewCustomer"/>
-          <include name="setproperty"/>
-        </methods>
-      </class> <!-- com.inetBankingProject.TC_AddCustomerTest_003 -->
     </classes>
   </test> <!-- BankingApp Test(failed) -->
 </suite> <!-- Failed suite [inetBankingProject] -->
